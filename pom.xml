@@ -28,6 +28,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+      <repository>
+          <id>nexus</id>  
+          <name>Release Repos</name>
+          <url>http://34.16.131.240:8081/repository/firstrelease/</url>
+       </repository>
+      <snapshotRepository>
+          <id>nexus</id>
+          <name>Snapshot Repos</name>
+          <url>http://34.16.131.240:8081/repository/firstsnapshot/</url>
+      </snapshotRepository>
+  </distributionManagement>
+
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
